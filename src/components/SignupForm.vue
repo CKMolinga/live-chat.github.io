@@ -14,6 +14,7 @@
       placeholder="password"
       v-model="password"
     />
+    <div class="error">{{ error }}</div>
     <button>Sign Up</button>
   </form>
 </template>
@@ -36,7 +37,7 @@ export default {
       console.log("You signed up!");
     };
 
-    return { displayName, email, password, handleSubmit };
+    return { displayName, email, password, error, handleSubmit };
   },
 };
 </script>
